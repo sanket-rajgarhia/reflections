@@ -1,0 +1,40 @@
+What happens when you initialise a repository? Why do you need to do it?
+
+  When you initialise a repository a hidden folder .git is added to the
+  folder making it a git repository.
+  The .git folder will now contain all the metadata regarding the files that are
+  being tracked for changes.The metadata pertains to the various changes that
+  have been made to the files and saved as checkpoints/commits to the git
+  repository.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+  A working directory contains all the files which are related to each other
+  in some logical sense.
+  A staging area is an intermediate area where the relevant files can be
+  gathered as one logical unit which can be committed using a single commit.
+  It is not necessary that all the files in the working directory are staged
+  all at once for a single commit.
+  A repository contains meta data for tracking changes to all the files added
+  to the repository, which again might not be all the files in the working
+  directory.
+   Say you're working on two features - one is finished, and one still needs
+   some work done. You'd like to make a commit and go home (5 o'clock, finally!)
+   but wouldn't like to commit the parts of the second feature, which is not
+   done yet. You stage the parts you know belong to the first feature, and
+   commit. Now your commit is your project with the first feature done,
+   while the second is still in work-in-progress in your working directory.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
