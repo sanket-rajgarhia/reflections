@@ -27,6 +27,11 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+  When you add files to the staging area you can verify the difference in
+  comparison to the file in the repository using the command
+                    git diff --staged
+  The differences that are displayed should relate to one logical feature
+  change and then you are ready to commit the changes.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
