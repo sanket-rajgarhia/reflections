@@ -35,6 +35,7 @@ change?
 
 What are some situations when branches would be helpful in keeping your history
 organised? How would branches help?
+
   When you want to try an experimental feature without committing the changes
   to your master branch, you create a new branch and checkout that branch.
   Any changes you make now and commit are a part of this branch.
@@ -46,10 +47,21 @@ organised? How would branches help?
   where in you committed your experimental changes.
   Thus branches help us to develop features incrementally without disturbing
   the master branch (master copy of the project with its change log) and to
-  merge or discard the new experimental branch. 
+  merge or discard the new experimental branch.
 
-How do the diagrams help you visualize the branch structure?
-
+How do the diagrams help you visualise the branch structure?
+  Diagrams help us visualise the branch structure in the following ways:
+  1. It shows how many versions of your program currently exists since each
+     branch represents the main program with modifications.
+  2. It also shows how the master branch relates to all the existing concurrent
+     branches.
+  3. It helps isolate any unreachable commits and thus impresses the need to
+     create branches for the same.
+  4. It also helps in visualising how the merge would look when the branches
+     will be merged.
+  5. It clearly depicts the parent of each commit of every branch up until the
+     initial commit is reached.
+     
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
