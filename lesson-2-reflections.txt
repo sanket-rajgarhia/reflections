@@ -34,7 +34,19 @@ change?
   change and then you are ready to commit the changes.
 
 What are some situations when branches would be helpful in keeping your history
-organized? How would branches help?
+organised? How would branches help?
+  When you want to try an experimental feature without committing the changes
+  to your master branch, you create a new branch and checkout that branch.
+  Any changes you make now and commit are a part of this branch.
+  If you wish to see the original state prior to making these changes, you
+  could revert back to the master branch by using the command -
+  $git checkout master
+  Also note that the git log for the two branches are separate. The git log for
+  the master branch does not reflect any commits made to your new branch
+  where in you committed your experimental changes.
+  Thus branches help us to develop features incrementally without disturbing
+  the master branch (master copy of the project with its change log) and to
+  merge or discard the new experimental branch. 
 
 How do the diagrams help you visualize the branch structure?
 
