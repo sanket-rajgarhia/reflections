@@ -82,5 +82,19 @@ Q6. What is the result of merging two branches together? Why do we represent it
     Also the new commit is the tip of the master branch.
 
 
-What are the pros and cons of Git's automatic merging vs. always doing merges
-manually?
+Q7. What are the pros and cons of Git's automatic merging vs. always doing
+    merges manually?
+
+    git tries to automatically merge branches as long as there are no conflicts.
+    A conflict could be of one of the following type:
+    1. A line of code not present in the origin (the commit from where the
+       branches forked) is now introduced to the file in both the branches but
+       the lines differ.
+    2. A line of code present in the origin has been changed in both the
+       branches in such a way that they are not the same in the two branches.
+
+    In such a scenario git raises a conflict and you need to manually resolve
+    the conflict before the merge can succeed with a commit.
+    If git were to automatically guess and incorporate changes you would have
+    ended up with merges that were completely unpredictable and possible with
+    code that would not compile or run.
