@@ -1,4 +1,4 @@
-What happens when you initialise a repository? Why do you need to do it?
+Q1. What happens when you initialise a repository? Why do you need to do it?
 
   When you initialise a repository a hidden folder .git is added to the
   folder making it a git repository.
@@ -7,8 +7,9 @@ What happens when you initialise a repository? Why do you need to do it?
   have been made to the files and saved as checkpoints/commits to the git
   repository.
 
-How is the staging area different from the working directory and the repository?
-What value do you think it offers?
+Q2. How is the staging area different from the working directory and the
+    repository? What value do you think it offers?
+
   A working directory contains all the files which are related to each other
   in some logical sense.
   A staging area is an intermediate area where the relevant files can be
@@ -25,15 +26,16 @@ What value do you think it offers?
    commit. Now your commit is your project with the first feature done,
    while the second is still in work-in-progress in your working directory.
 
-How can you use the staging area to make sure you have one commit per logical
-change?
+Q3. How can you use the staging area to make sure you have one commit per
+    logical change?
+
   When you add files to the staging area you can verify the difference in
   comparison to the file in the repository using the command
                     git diff --staged
   The differences that are displayed should relate to one logical feature
   change and then you are ready to commit the changes.
 
-What are some situations when branches would be helpful in keeping your history
+Q4. What are some situations when branches would be helpful in keeping your history
 organised? How would branches help?
 
   When you want to try an experimental feature without committing the changes
@@ -49,7 +51,8 @@ organised? How would branches help?
   the master branch (master copy of the project with its change log) and to
   merge or discard the new experimental branch.
 
-How do the diagrams help you visualise the branch structure?
+Q5. How do the diagrams help you visualise the branch structure?
+
   Diagrams help us visualise the branch structure in the following ways:
   1. It shows how many versions of your program currently exists since each
      branch represents the main program with modifications.
@@ -61,9 +64,23 @@ How do the diagrams help you visualise the branch structure?
      will be merged.
   5. It clearly depicts the parent of each commit of every branch up until the
      initial commit is reached.
-     
-What is the result of merging two branches together? Why do we represent it in
-the diagram the way we do?
+
+Q6. What is the result of merging two branches together? Why do we represent it
+    in the diagram the way we do?
+    The result of merging two branches together are as follows:
+    1. All the commits in the two branches are now merged into the primary
+       branch with a new commit that becomes the tip of the primary branch.
+    2. The label of the non primary branch becomes redundant and can be
+       deleted.
+    3. The log of the primary branch now displays all the commits from the
+       two branches ordered by timestamp. Also, now the commit preceding a
+       commit in the primary branches log might not be its parent.
+
+    We represent it in the diagram in the way we do to impress that all commits
+    are reachable since after the merge also each commit can trace back its
+    parent and also to ensure that no commits are unreachable.
+    Also the new commit is the tip of the master branch.
+
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
