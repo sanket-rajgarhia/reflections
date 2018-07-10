@@ -1,19 +1,25 @@
 Q.1 When would you want to use a remote repository rather than keeping all
 your work local?
 
-    The reason for using a remote repository rather than keeping all your 
+    The reason for using a remote repository rather than keeping all your
     work local are as follows:
     1. Serves as a backup of your local repository.
     2. Allows you to collaborate and share your projects with other people
        on the web.
     3. Your projects are easily accessible from anywhere.
 
-Q2. Why might you want to always pull changes manually rather than having 
+Q2. Why might you want to always pull changes manually rather than having
 Git automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    The reasons why you would want to pull changes manually from a remote
+    repository rather than git automatically syncing is to avoid a certain
+    situation where in you are working on a branch and are in the middle of an
+    implementation.In such a case you would like to complete your implementation
+    and commit your work to your local repository before you sync the local
+    repository with any additional new changes (commits) made to the remote
+    repository.
 
-Q3. Describe the differences between forks, clones, and branches.  
+Q3. Describe the differences between forks, clones, and branches.
 When would you use one instead of another?
 
     Fill in your answer here
@@ -23,12 +29,12 @@ remote stored locally?
 
     Fill in your answer here
 
-Q5. How would you collaborate without using Git or GitHub?  What would be 
+Q5. How would you collaborate without using Git or GitHub?  What would be
 easier, and what would be harder?
 
     Fill in your answer here
 
-Q6. When would you want to make changes in a separate branch rather than 
+Q6. When would you want to make changes in a separate branch rather than
 directly in master?  What benefits does each approach have?
 
     Fill in your answer here
