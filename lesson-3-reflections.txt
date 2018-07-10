@@ -22,7 +22,44 @@ Git automatically stay up-to-date with your remote repository?
 Q3. Describe the differences between forks, clones, and branches.
 When would you use one instead of another?
 
-    Fill in your answer here
+    Fork - Is a concept limited to Github. Fork is to make a copy of someone
+    else's repository under your own account in the Github server. You can
+    now have an identical repository under your account as the one you forked.
+    You can not clone this repository under your account to your local machine
+    and make changes and commit them locally, after which you can push these
+    changes back to the repository under your account.
+    You could also add collaborators who could make changes to this repository
+    under your account.
+    This repository links back to the original repository you used to fork in
+    the first place and it makes it easier to suggest changes to the original,
+    since you may not have the permission to make changes to the original
+    repository.
+    Forking someone else's repository also keeps track of the number of people
+    who have forked this repository.
+
+    Clone - Is to make a copy of a repository from a url to your local machine.
+    You could also use a local repository and clone it to a different location
+    on your local system.
+    Cloning is typically used to make a local copy of your Github repository on
+    the local system so that changes can be easily made and pushed back to the
+    Github repository when complete and committed.
+
+    Branches - A branch is a series of commits that originates at a commit on
+    some other branch (typically a master branch). A branch represents a
+    version of your files and folders in the repository.
+    When you want to create a new feature or try an experiment you could make a
+    new branch in git and `checkout` the new branch to continue working.
+    This does not disturb the original version of your project (the master
+    branch) and you could switch versions simply by switching branches.
+    When you switch branches the files and folders in the repository are
+    automatically updated to correspond to their last commit state.
+    Once you have completed adding the new feature or experiment - you can
+    merge the branch into your master branch (post resolution of conflicts if
+    any) and delete the experimental/new-feature branch.
+    If the branch is not merged with the master and you attempt to delete it,
+    you will loose all your commits in the experimental branch. However, if
+    you remember their commit ID you can still access them unless the git
+    garbage collector runs automatically.
 
 Q4. What is the benefit of having a copy of the last known state of the
 remote stored locally?
