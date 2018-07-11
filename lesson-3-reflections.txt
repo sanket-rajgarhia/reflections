@@ -96,10 +96,31 @@ easier, and what would be harder?
     incorporated to the main project folder.
     This is all very error prone and inefficient.
     Using git and Github streamlines both - version control and collaboration.
-    
+
 
 
 Q6. When would you want to make changes in a separate branch rather than
 directly in master?  What benefits does each approach have?
 
-    Fill in your answer here
+    In a collaborative environment it is always advisable to make your changes
+    to a separate branch on your local repos and share this branch on Github via
+    a pull request so that other collaborators can review your changes and make
+    suggestions.
+    Once you have updated your new branch to incorporate these changes and
+    updated the fork on Github, a stage would arrive when it is ready to be
+    merged with the the master.
+    Github indicates that there are no conflicts when merging your branch to the
+    master if the Merge button is available. Otherwise you would have to pull
+    the master to your local repository and merge it into your new branch.
+    This gives you an opportunity to prepare your branch for a merge with the
+    master branch without conflicts and then you can commit the changes and push
+    the updated new branch on to Github to be merged with the master branch.
+    Your new commits shows up in the pull request  and the branch is ready to be
+    merged into master via the Merge button which becomes enabled as there are
+    no conflicts.
+
+    Making changes to a master branch directly is advisable when working in a
+    non collaborative environment and the changes being made are simple in
+    nature such as small bug fixes, typos, simple features etc.
+    The overhead for creating a new branch is unnecessary and making changes to
+    the master makes more sense. 
