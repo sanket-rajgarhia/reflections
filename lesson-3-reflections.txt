@@ -86,7 +86,18 @@ remote stored locally?
 Q5. How would you collaborate without using Git or GitHub?  What would be
 easier, and what would be harder?
 
-    Fill in your answer here
+    In the absence of git or Github - The changes would be need to be made
+    in a copy of the project and documented. Thereafter they would need to
+    be uploaded to a cloud repository such as dropbox and the link to this
+    resource would need to be emailed to all the collaborators.
+    The collaborators would in turn email their feedback and then after
+    accommodating their suggestions the whole cycle would need to be repeated.
+    After the changes would be finalised they would have to be manually
+    incorporated to the main project folder.
+    This is all very error prone and inefficient.
+    Using git and Github streamlines both - version control and collaboration.
+    
+
 
 Q6. When would you want to make changes in a separate branch rather than
 directly in master?  What benefits does each approach have?
