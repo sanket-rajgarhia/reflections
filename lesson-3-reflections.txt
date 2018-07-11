@@ -64,7 +64,24 @@ When would you use one instead of another?
 Q4. What is the benefit of having a copy of the last known state of the
 remote stored locally?
 
-    Fill in your answer here
+    When you have a a copy of the last known state of the remote stored locally
+    you can:
+    1. Track the commits you have made locally after the last known state on
+       the remote.
+    2. When you have have a commit on your local repository past the commit
+       of the last know state commit on remote and you also have a different
+       commit on your remote repository past the commit of the last known state
+       commit of the remote and you try to sync the two together, git
+       essentially updates the branch having the copy of the last known state
+       of the remote on your local system. It then attempts to merge the
+       updated branch having the copy of the last known state of the remote with
+       the corresponding branch in the local repository, thereby creating a new
+       merged commit. This ensures that the new commit in the branch of the
+       local repository is NOT overwritten by the new commit on the remote
+       repository and thus the branch copy of the last known state of the remote
+       actively assists in merging both the new commits to the branch in the
+       local repository.
+
 
 Q5. How would you collaborate without using Git or GitHub?  What would be
 easier, and what would be harder?
